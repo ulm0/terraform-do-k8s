@@ -1,7 +1,8 @@
 resource "random_string" "k8s_name" {
-  length = 12
+  length  = 12
   special = false
-  upper = false
+  upper   = false
+  number  = false
 }
 
 resource "digitalocean_kubernetes_cluster" "do_k8s" {
